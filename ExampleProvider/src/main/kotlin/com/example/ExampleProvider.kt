@@ -5,11 +5,11 @@ import com.lagradost.cloudstream3.SearchResponse
 import com.lagradost.cloudstream3.TvType
 
 class ExampleProvider : MainAPI() { // All providers must be an instance of MainAPI
-    override var mainUrl = "https://example.com/" 
-    override var name = "Example provider"
-    override val supportedTypes = setOf(TvType.Movie)
+    override var mainUrl = "https://filman.cc/" 
+    override var name = "Filman"
+    override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
 
-    override var lang = "en"
+    override var lang = "pl"
 
     // Enable this when your provider has a main page
     override val hasMainPage = true
